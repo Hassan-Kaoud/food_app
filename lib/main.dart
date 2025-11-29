@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/features/auth/view/login_view.dart';
 import 'package:food_app/features/auth/view/signup_view.dart';
+import 'package:food_app/root.dart';
 import 'package:food_app/splash.dart';
 
 void main() {
@@ -13,10 +14,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(scaffoldBackgroundColor:  Colors.white,),
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo'
       ,
-      home: SignupView(),
+      home: Root(),
     );
   }
 }
